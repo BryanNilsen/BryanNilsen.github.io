@@ -182,6 +182,13 @@ body {
     font-weight: bold;
     font-size: 2em;
   }
+
+  .header_name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4em;
+    padding: 0px;
+    margin: -10px 0px;
+  }
 }
 
 /* footer */
