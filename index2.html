@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Rasa|Open+Sans" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Bryan Nilsen - Full Stack Software Developer - Greater Nashville</title>
+</head>
+
+<body>
+  <div class="main_wrapper">
+
+    <!-- header and navigation -->
+    <div class="header">
+      <h1 class="header_name">BRYAN NILSEN</h1>
+      <h2 class="header_stripe">: Full-Stack Software Developer</h2>
+      <h3 class="header_details">Greater Nashville - <span id="moment"></span> bryannilsen@gmail.com | 646.221.1321</h3>
+    </div>
+    <ul class="main_nav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!-- end header and navigation -->
+
+    <!-- main content -->
+    <div class="content_wrapper">
+
+      <section id="about" class="category_container">
+        <h1>About</h1>
+        <div class="flex">
+          <div class="about_image">
+            <img src="https://media.licdn.com/dms/image/C5603AQGPEAmnWv-Y5Q/profile-displayphoto-shrink_200_200/0?e=1552521600&v=beta&t=06picFn92MRa1m5IYnVwhQxlobAATGkvCUefEqTB9Aw"
+              alt="Bryan Nilsen profile photo" />
+          </div>
+          <div class="about_copy col">
+            <p>Enthusiastic team player, effective communicator, and creative thinker with a growing skillset in
+              full-stack software development. Experience meeting strict deadlines, handling multiple assignments, and
+              interacting with clients. I high-five often. Diverse knowledge base and skills. Eager to learn as well as
+              teach others.
+            </p>
+            <p>As comfortable in a suit and tie as I am in jeans and a rock t-shirt. I enjoy logic, problem
+              solving, and making things work.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="info_bar">
+        <h1><strong>Random Fact:</strong> <span id="random_fact"></span></h1>
+      </section>
+
+      <section id="resume" class="category_container">
+        <h1>Resume</h1>
+        <div class="flex">
+          <div class="col education">
+            <h2>Education</h2>
+            <h3>Nashville Software School</h3>
+            <p>Full-Stack Software Development Bootcamp</p>
+            <h3>NC State School of Design</h3>
+            <p>Bachelor of Arts - Art and Design</p>
+          </div>
+          <div class="col technical">
+            <h2>Technical Skills</h2>
+            <ul>
+              <li>HTML, CSS</li>
+              <li>Javascript, jQuery</li>
+              <li>React</li>
+              <li>Python, Django</li>
+              <li>Adobe Photoshop, Illustrator, XD</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- work experience -->
+        <section class="experience">
+          <h2>Professional Experience</h2>
+
+          <section>
+            <h3>Graphic Artist / Web Developer</h3>
+            <p>Various companies in the US and Abroad</p>
+            <ul>
+              <li>Artwork production and Software Instructor for Rayzist Photomask, a glass and crystal engraving
+                company in Southern California</li>
+              <li>Engraving Consultant / Web Design and Development for The Ardenza Group, a tech company in Dublin,
+                Ireland</li>
+              <li>Artwork production / Web Design and Development for The Coastal Group / Redscope - New York City,
+                NY</li>
+              <li>Designed promotional materials for NYC-based tribute band</li>
+              <li>https://www.behance.net/bryannilsen</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Stenographer / Court Reporter</h3>
+            <p>Independent Contractor with several Court Reporting Agencies in New York City</p>
+            <ul>
+              <li>produced verbatim transcripts of deposition and court testimony</li>
+              <li>delivered accurate realtime translation to attorneys during legal proceedings</li>
+              <li>consistently met transcript deadlines and handled client requests</li>
+              <li>routinely handled confidential material and sensitive data</li>
+            </ul>
+          </section>
+
+          <section>
+              <h3>Sales / Marketing</h3>
+              <p>Alpha Reporting Corporation - Court Reporting Firm Nashville</p>
+              <ul>
+                <li>Created content for various social media platforms</li>
+                <li>Managed client relationships and worked with CRM software</li>
+                <li>Maintained office equipment and handled technical support for local office</li>
+              </ul>
+            </section>
+        </section>
+      </section>
+
+      <section class="info_bar">
+        <h1><strong>GitHub Stats:</strong> Bryan has 24 repositories with 86942 lines of code... and counting.</h1>
+      </section>
+
+      <!-- projects -->
+      <section id="projects" class="category_container">
+        <h1>Projects</h1>
+
+        <h2>Swishlist</h2>
+        <div class="flex">
+          <section class="project_description">
+            <p>A responsive basketball shot-tracking app, Swishlist enables users to log their workouts and shots
+              attempted and made with the aid of a dynamically-generated interactive basketball court map built using
+              custom CSS. Individual statistics are presented along with leaderboards in addition to the user's
+              profile.</p>
+            <p>Swishlist was written in React using JSON Server with a REST API.</p>
+            <p>>> <a href="https://github.com/BryanNilsen/Swishlist-React" target="blank">Swishlist repository on
+                GitHub</a></p>
+          </section>
+          <section class="project_image">
+            <img src="/images/swishlist.png" alt="Swishlist - basketball shot tracking app">
+          </section>
+        </div>
+
+        <h2>Nutshell</h2>
+        <div class="flex">
+          <section class="project_description">
+            <p>A responsive CRUD app, Nutshell functions as a social media platform enabling users to add news articles
+              and events, maintain a to-do list, and chat with other users.</p>
+            <p>Nutshell was written with HTML, CSS, JavaScript and jQuery and utilized JSON Server with a REST API.</p>
+            <p>Working as part of a team in the development of Nutshell, I had the individual responsibility of the
+              events component. I also devised and implemented the dashboard navigation system.</p>
+            <p>>> Nutshell repository</p>
+            <p>Swishlist was written in React using JSON Server with a REST API.</p>
+          </section>
+          <section class="project_image">
+            <img src="/images/Nutshell-V2.png" alt="Nutshell - basic social media platform app">
+          </section>
+        </div>
+      </section>
+
+
+      <section class="info_bar">
+        <h1>Tech Skills: </h1>
+      </section>
+
+      <!-- contact -->
+      <section id="contact" class="category_container">
+        <h1>Contact</h1>
+        <p>I listened for a living for over a dozen years and am happy to talk when I can. Drop me a line. I'd love to hear from you.</p>
+        <ul>
+          <li><a href="mailto:bryannilsen@gmail.com">bryannilsen@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/bryan-nilsen/" target="blank">LinkedIn</a></li>
+          <li><a href="https://github.com/BryanNilsen?tab=repositories" target="blank">GitHub Repositories</a></li>
+        </ul>
+      </section>
+
+    </div>
+
+    <!-- end main content -->
+    <footer class="footer">
+      <a href="mailto:bryannilsen@gmail.com">bryannilsen@gmail.com</a>
+    </footer>
+  </div>
+
+  <!-- scripts -->
+  <script src="https://unpkg.com/moment"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
