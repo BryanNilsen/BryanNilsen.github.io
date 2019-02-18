@@ -1,5 +1,5 @@
+// add current date to page
 var moment = moment().format("dddd, MMM Do, YYYY");
-
 document.getElementById("moment").append(moment)
 
 
@@ -34,15 +34,14 @@ $(document).ready(function(){
 // random facts
 var facts_array = [
   "I can transcribe legal testimony at over 225 words per minute.",
-  "I've played basketball in the World's Most Famous Arena.",
+  "I've played basketball in Madison Square Garden.",
   "I've had Pizza Hut in over 9 different countries.",
-  "80% of the time my code works every time.",
+  "I am a fantastically mediocre guitar player.",
+  "I once sat next to Secret Service while transcribing a speech of a former US President.",
+  "If you do something awesome, I will probably high-five you.",
+  "I once ate ribs on live TV with Dom DeLuise",
 ]
 
 let random_fact = facts_array[Math.floor(Math.random() * facts_array.length)]
-
-
-
-
 
 document.getElementById("random_fact").append(random_fact)
