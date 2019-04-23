@@ -39,7 +39,7 @@ var facts_array = [
   "I am a fantastically mediocre guitar player.",
   "I once sat next to Secret Service while transcribing a speech of a former US President.",
   "If you do something awesome, I will probably high-five you.",
-  "I once ate ribs on live TV with Dom DeLuise",
+  "I once ate ribs with Dom DeLuise on live TV.",
 ]
 
 let random_fact = facts_array[Math.floor(Math.random() * facts_array.length)]
