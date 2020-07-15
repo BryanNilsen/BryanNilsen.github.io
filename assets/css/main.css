@@ -1860,7 +1860,7 @@ br.clear {
   } */
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 455px) {
   .button {
     padding: 0 0.4em 0 0.4em;
     font-size: 0.9rem;
