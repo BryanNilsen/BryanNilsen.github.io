@@ -204,13 +204,31 @@ select {
   color: #888;
 }
 
+.name_bold {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.contact_parent {
+  width: 100%;
+  display: flex;
+}
+.contact_details {
+  text-align: left;
+  width: 60%;
+  padding: 1em;
+}
+.contact_image {
+  width: 40%;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
+  /* font-weight: 600; */
   color: #666;
   line-height: 1.5em;
 }
@@ -236,7 +254,7 @@ h6 a strong {
 
 h2 {
   font-size: 2em;
-  letter-spacing: -1px;
+  /* letter-spacing: -1px; */
 }
 
 h2.alt {
@@ -265,7 +283,7 @@ footer {
 
 strong,
 b {
-  font-weight: 300;
+  font-weight: bold;
   color: #666;
 }
 
@@ -1842,10 +1860,19 @@ br.clear {
   } */
 }
 
+@media screen and (max-width: 450px) {
+  .button {
+    padding: 0 0.4em 0 0.4em;
+    font-size: 0.9rem;
+  }
+}
+
 /* Text Copy */
 .copy {
   text-align: justify;
   padding: 1em;
+  color: #22262aba;
+  font-weight: 300;
 }
 
 .copy .f-500 {
@@ -2094,7 +2121,7 @@ button,
   background-color: #22262a;
   border: 0;
   cursor: pointer;
-  background-image: -moz-linear-gradient(
+  /* background-image: -moz-linear-gradient(
       top,
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.15)
@@ -2113,7 +2140,7 @@ button,
     ),
     url("images/overlay.png");
   background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)),
-    url("images/overlay.png");
+    url("images/overlay.png"); */
   -moz-transition: background-color 0.25s ease-in-out;
   -webkit-transition: background-color 0.25s ease-in-out;
   -ms-transition: background-color 0.25s ease-in-out;
@@ -2264,7 +2291,7 @@ button:active,
 #logo h1 {
   position: relative;
   color: #fff;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 1em;
   line-height: 1em;
 }
@@ -2373,10 +2400,10 @@ button:active,
   margin: 0;
   overflow: hidden;
   padding: 4em 0;
-  box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05),
-    inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+  /* box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05),
+    inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025); */
   text-align: center;
-  background-image: url("images/overlay.png");
+  /* background-image: url("images/overlay.png"); */
 }
 
 #main > section.dark {
@@ -2389,7 +2416,8 @@ button:active,
 #main > section.dark h4,
 #main > section.dark h5,
 #main > section.dark h6 {
-  color: inherit;
+  color: white;
+  text-shadow: 0px 0px 10px #22262a;
 }
 
 #main > section.dark strong {
@@ -2757,7 +2785,7 @@ button:active,
 
   h2 {
     font-size: 1.5em;
-    letter-spacing: 0;
+    /* letter-spacing: 0; */
     font-weight: 300;
   }
 
