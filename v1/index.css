@@ -1,0 +1,256 @@
+:root {
+  --main-bg-color: rgb(51, 49, 50);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("/images/crossline-lines.png");
+  /* background image courtesy of https://www.toptal.com */
+  /* background: rgb(150, 150, 150); */
+  color: var(--main-bg-color);
+}
+
+.main_wrapper {
+  background: white;
+  margin: auto;
+  width: 100%;
+  min-width: 400px;
+  max-width: 1000px;
+  box-shadow: 0px 0px 20px 3px rgb(51, 49, 50)
+}
+
+.header {
+  text-align: center;
+  margin: 0px 10px;
+}
+
+.header_name {
+  /* color: rgb(51, 49, 50); */
+  font-family: 'Oswald', sans-serif;
+  font-size: 4.2em;
+  padding: 0px;
+  margin: -10px 0px;
+}
+
+.header_stripe {
+  text-align: left;
+  background: var(--main-bg-color);
+  margin: 0px;
+  padding: 2px 5px;
+  color: whitesmoke;
+  font-family: 'Rasa', serif;
+  font-size: 1.5em;
+}
+
+.header_details {
+  font-family: 'Rasa', serif;
+  color: rgb(51, 49, 50);
+  font-size: 1em;
+  border-bottom: 1px solid var(--main-bg-color);
+  margin-top: 5px;
+}
+
+.header_details a {
+  color: rgb(51, 49, 50);
+  text-decoration: none;
+}
+
+.header_details a:hover {
+  color: rgb(214, 31, 38);
+  text-decoration: underline;
+}
+
+/* navigation */
+
+.main_nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  /* assumes you only want one row */
+}
+
+.main_nav li {
+  display: inline;
+  color: rgb(51, 49, 50);
+  font-family: 'Rasa', serif;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.main_nav li a {
+  color: var(--main-bg-color);
+  text-decoration: none;
+}
+
+.main_nav li a:hover {
+  color: rgb(214, 31, 38);
+}
+
+/* info bar */
+
+.info_bar {
+  text-align: center;
+  background: rgb(150, 150, 150);
+  margin: 20px 0px;
+  padding: 10px;
+}
+
+.info_bar h1 {
+  color: whitesmoke;
+  font-family: 'Rasa', serif;
+  font-size: 1.5em;
+  font-weight: lighter;
+  text-shadow: 0px 0px 10px rgb(51, 49, 50)
+}
+
+.info_bar p {
+  color: whitesmoke;
+  text-shadow: 0px 0px 10px rgb(51, 49, 50)
+}
+
+.info_bar a {
+  color: rgb(187, 187, 187);
+  text-decoration: none;
+}
+
+.info_bar a:hover {
+  color: lightgreen;
+}
+
+/* content */
+
+.content_wrapper {
+  margin: 10px;
+}
+
+.category_container h1 {
+  font-family: 'Rasa', serif;
+  font-weight: bold;
+  font-size: 2.5em;
+  color: rgb(214, 31, 38);
+}
+
+.content_wrapper h2 {
+  font-family: 'Rasa', serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: var(--main-bg-color);
+  margin-bottom: 5px;
+}
+
+.content_wrapper h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--main-bg-color);
+  margin-bottom: 0px;
+}
+
+.content_wrapper p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9em;
+  margin-top: 0px;
+}
+
+.content_wrapper li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9em;
+}
+
+.profile_copy {}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.profile_image img {
+  max-width: 100%;
+}
+
+.flex.col {
+  /* width: 50%; */
+}
+
+.left-margin {
+  margin-left: 10px;
+}
+.education img {
+  margin-right: 10px;
+}
+
+.project_description {
+  margin: 0px 0px;
+}
+
+.project_image {
+  order: -1;
+}
+
+.project_image img {
+  max-width: 100%;
+  border: 1px solid var(--main-bg-color);
+}
+
+@media (min-width: 600px) {
+  .flex {
+    flex-wrap: nowrap;
+  }
+  .project_image {
+    order: 2;
+  }
+  .project_image img {
+    max-width: 250px;
+    min-width: 100px;
+    margin-left: 20px;
+  }
+
+  .project_description {
+    margin: 0px 10px;
+  }
+  .profile_image img {
+    margin-right: 10px;
+    max-width: 250px;
+    min-width: 200px;
+  }
+  .main_nav li {
+    display: inline;
+    color: rgb(51, 49, 50);
+    font-family: 'Rasa', serif;
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  .header_name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4em;
+    padding: 0px;
+    margin: -10px 0px;
+  }
+}
+
+/* footer */
+
+.footer {
+  text-align: left;
+  background: var(--main-bg-color);
+  margin: 0px;
+  padding: 10px 5px;
+  color: whitesmoke;
+  font-family: 'Rasa', serif;
+  font-size: 1.5em;
+}
+
+.footer a {
+  color: rgb(150, 150, 150);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: rgb(226, 226, 226);
+}
